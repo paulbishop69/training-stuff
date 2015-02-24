@@ -1,79 +1,69 @@
 <!DOCTYPE html>
 <html>
 <head>
-<!-- Latest compiled and minified CSS -->
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">
+  <!-- Latest compiled and minified CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">
 
-<!-- Optional theme -->
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap-theme.min.css">
+  <!-- Optional theme -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap-theme.min.css">
 
-<!-- Latest compiled and minified JavaScript -->
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
-</head>
-<body>
-
-<h1>Title number search</h1>
-
-<form>
-<label> Title number:<label>
-<br>
-<input type="text" name="TitleNumber" id="Input">
-<input type="submit" value="Submit" id="Submit">
-<br>
-</form>
-
-<caption>Title results</caption>
-
-</body>
-</html>
-
-<!DOCTYPE html>
-<html>
-<body>
-<!-- table layout -->
-<head>
-<style>
-table, th, td {
+  <style>
+  table, th, td {
     border: 1px solid black;
     border-collapse: collapse;
-}
-th, td {
+  }
+  th, td {
     padding: 5px;
-}
-th {
+  }
+  th {
     text-align: left;
   }
-</style>
+  </style>
 </head>
-
 <body>
-<table border="1" style="width:100%">
 
-  <tr>
-    <th>title number</th>
-    <th>customer reference</th>
-    <th>order type</th>
-    <th>Priority</th>
-    <th>status</th>
-    <th>Allocated</th>
-  </tr>
-  <tr>
-    <td>DN100</td>
-    <td>123</td>
-    <td>Dealing</td>
-    <td>12/03/2015</td>
-    <td>Pending</td>
-    <td>Bill Bloggs</td>
-  </tr>
-  <tr>
-    <td>DN100</td>
-    <td>12345</td>
-    <td>Search</td>
-    <td>13/03/2015</td>
-    <td>Complete</td>
-    <td>Bill Head</td>
-  </tr>
-</table>
+  <h1>Title number search</h1>
 
-</body>
+  <form class="form-inline">
+    <div class="form-group">
+      <label for="exampleInputName2">Title number</label>
+      <input type="text" class="form-control" id="exampleInputName2" placeholder="DN123456">
+    </div>
+
+    <button type="submit" class="btn btn-default">Submit</button>
+  </form>
+
+    <caption>Title results</caption>
+    <table border="1" style="width:100%" class="table">
+
+      <tr>
+        <th>title number</th>
+        <th>customer reference</th>
+        <th>order type</th>
+        <th>Priority</th>
+        <th>status</th>
+        <th>Allocated</th>
+      </tr>
+      <tr class="danger">
+        <td>DN101</td>
+        <td>123</td>
+        <td>Dealing</td>
+        <td>12/03/2015</td>
+        <td>Pending</td>
+        <td>Bill Bloggs</td>
+      </tr>
+      <tr>
+        <td>DN100</td>
+        <td>12345</td>
+        <td>Search</td>
+        <td>13/03/2015</td>
+        <td>Complete</td>
+        <td>Bill Head</td>
+      </tr>
+    </table>
+
+    <!-- Latest compiled and minified JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
+
+  </body>
 </html>
